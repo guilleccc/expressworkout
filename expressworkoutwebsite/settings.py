@@ -26,7 +26,7 @@ SECRET_KEY = 'c2(^gi2dk=vgk(uq8g#fgeju*p98#z0&af-t)fvr1j!)^r3n0r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['frozen-gorge-41923.herokuapp.com',]
+ALLOWED_HOSTS = ['frozen-gorge-41923.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -123,7 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 
-STATIC_ROOT = location("static")
+STATIC_ROOT = location("staticfiles")
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -134,3 +134,8 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = location('../public/media')
 MEDIA_URL = '/media/'
 
+
+try:
+    from local_settings import *
+except:
+    pass
