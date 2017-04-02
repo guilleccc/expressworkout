@@ -26,7 +26,7 @@ SECRET_KEY = 'c2(^gi2dk=vgk(uq8g#fgeju*p98#z0&af-t)fvr1j!)^r3n0r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['frozen-gorge-41923.herokuapp.com',]
 
 
 # Application definition
