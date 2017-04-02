@@ -87,3 +87,5 @@ ENV/
 
 # Rope project settings
 .ropeproject
+/envdjango
+/db.sqlite3
