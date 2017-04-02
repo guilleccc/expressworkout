@@ -129,6 +129,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     location("../static")
 ]
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 MEDIA_ROOT = location('../public/media')
