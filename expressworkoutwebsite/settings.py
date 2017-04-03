@@ -24,7 +24,7 @@ location = lambda x: os.path.join(os.path.dirname(os.path.realpath(__file__)), x
 SECRET_KEY = 'c2(^gi2dk=vgk(uq8g#fgeju*p98#z0&af-t)fvr1j!)^r3n0r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['frozen-gorge-41923.herokuapp.com', 'expressworkout.xyz', '127.0.0.1']
 
